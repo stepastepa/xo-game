@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.scores {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  display: flex;
+  gap: 20px;
+}
+.scores div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.scores span {
+  padding: 10px 16px;
+  background-color: black;
+  color: #fff;
+  font-size: 1.618rem;
+  border-radius: 5px;
+}
+
+.game-field {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field {
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  font-size: 3rem;
+}
+
+.field div {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.field.win {
+  font-size: 4.85rem;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.player-switcher{
+  display: flex;
+  gap: 2px;
+  border-radius: 7px;
+  border: 2px solid #ccc;
+  padding: 2px;
+}
+
+.button {
+  padding: 10px 16px;
+  background-color: black;
+  color: #fff;
+  font-size: 1.618rem;
+  opacity: 0.12;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.resetButton {
+  padding: 10px 16px;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.618rem;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+}
